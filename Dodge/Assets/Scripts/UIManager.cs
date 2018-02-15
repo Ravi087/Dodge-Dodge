@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour {
 
+    public static UIManager instance;
+
+
     [SerializeField]
     TextMeshProUGUI UpdatedScore;
 
@@ -27,8 +30,16 @@ public class UIManager : MonoBehaviour {
 
     bool ispaused;
 
-	// Use this for initialization
-	void Start () {
+    private void Awake()
+    {
+        if(instance == null)
+        {
+            instance = this;
+        }
+    }
+
+    // Use this for initialization
+    void Start () {
         ispaused = false;
 	}
 	

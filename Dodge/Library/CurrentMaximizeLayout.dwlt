@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 442}
   m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
-  controlID: 34288
+  controlID: 38425
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 34289
+  controlID: 38381
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -179,14 +179,14 @@ MonoBehaviour:
     width: 489
     height: 334
   m_SceneLighting: 1
-  lastFramingTime: 22265.536632553853
+  lastFramingTime: 32483.922679330208
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 240, y: 400, z: 0}
+    m_Target: {x: -60.15675, y: 416.08636, z: -10}
     speed: 2
-    m_Value: {x: 240, y: 400, z: 0}
+    m_Value: {x: -60.15675, y: 416.08636, z: -10}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -213,9 +213,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 542.10974
+    m_Target: 919.24255
     speed: 2
-    m_Value: 542.10974
+    m_Value: 919.24255
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -330,9 +330,9 @@ MonoBehaviour:
     height: 598
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 00880000
-    m_LastClickedID: 34816
-    m_ExpandedIDs: be6aeeff1e71eeffe45df4ffde61f4ffaa1ef7ff3098f8ff7aacf8ff96d3f9ff2c77fbff6cfbffff00000000a2870000e287000000880000
+    m_SelectedIDs: 4e1cedff
+    m_LastClickedID: -1237938
+    m_ExpandedIDs: 4e74edff0076edffbe6aeeff1e71eeffe45df4ffde61f4ffaa1ef7ff3098f8ff7aacf8ff96d3f9ff2c77fbff6cfbffff00000000a2870000e2870000008800008cd30000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -418,19 +418,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scenes
+    - Assets/TextMesh Pro/Resources/Fonts & Materials
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/TextMesh Pro/Resources/Fonts & Materials
   m_LastFoldersGridSize: -1
   m_LastProjectPath: G:\UnityAndroidGames\UDEMY\Repository\Dodge
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5c260000
-    m_LastClickedID: 9820
-    m_ExpandedIDs: 2c2600006e260000ac270000b0270000b2270000be27000000ca9a3bffffff7f
+    m_SelectedIDs: f2300000
+    m_LastClickedID: 12530
+    m_ExpandedIDs: 2c2600006e260000ac270000b0270000b2270000be270000de3000001631000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -483,10 +483,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 00880000
-    m_LastClickedInstanceID: 34816
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: 7a32000088360000622d00009429000018290000e0260000f82a00009a2600008a2a0000e628000050290000b6270000f42a0000fa270000f22700006a2900007e280000362a0000ce2700006227000000000000de360000
+    m_SelectedInstanceIDs: 4e1cedff
+    m_LastClickedInstanceID: -1237938
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: 7a32000088360000622d00009429000018290000e0260000f82a00009a2600008a2a0000e628000050290000b6270000f42a0000fa270000f22700006a2900007e280000362a0000ce2700006227000000000000de3600003e330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -594,7 +594,7 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 998
+    x: 951
     y: 100
-    width: 360
+    width: 407
     height: 598
