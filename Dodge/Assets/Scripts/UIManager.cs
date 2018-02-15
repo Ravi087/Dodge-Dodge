@@ -51,23 +51,23 @@ public class UIManager : MonoBehaviour {
     }
     public void PausedGame()
     {
-        if(!ispaused)
+        ispaused = !ispaused;
+        if(ispaused)
         {
-            ispaused = true;
             Time.timeScale = 0;
-            HideButtonScore();
-            pause_MenuPanel.SetActive(true);
         }
+        HideButtonScore();
+        pause_MenuPanel.SetActive(true);
     }
     public void PlayGame()
     {
         ispaused = !ispaused;
         if(!ispaused)
         {
-            Time.timeScale = 1;
-            ShowButtonScore();
-            pause_MenuPanel.SetActive(false);
+            Time.timeScale = 1;  
         }
+        ShowButtonScore();
+        pause_MenuPanel.SetActive(false);
     }
 
     public void ReloadGame()
@@ -76,8 +76,28 @@ public class UIManager : MonoBehaviour {
         if(!ispaused)
         {
             Time.timeScale = 1;
-            pause_MenuPanel.SetActive(false);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            
         }
+       // pause_MenuPanel.SetActive(false);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void ReturnToMenu()
+    {
+        ispaused = !ispaused;
+        if(!ispaused)
+        {
+            Time.timeScale = 1;
+        }
+        SceneManager.LoadScene(0);
+    }
+
+    public void GameOver()
+    {
+        HideButtonScore();
+        gameOverMenuPanel.SetActive(true);
+        gameOverCurrentScore.text = "SCORE: " + PlayerPrefs.GetInt("score");
+        gameOverBestScore.text = "BEST: " + PlayerPrefs.GetInt("highScore");
+    }
+
 }

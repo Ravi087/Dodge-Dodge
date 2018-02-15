@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 442}
   m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
-  controlID: 30967
+  controlID: 34288
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 31135
+  controlID: 34289
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -330,9 +330,9 @@ MonoBehaviour:
     height: 598
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7aacf8ff
-    m_LastClickedID: -480134
-    m_ExpandedIDs: e45df4ffde61f4ffaa1ef7ff3098f8ff7aacf8ff96d3f9ff2c77fbff6cfbffff00000000
+    m_SelectedIDs: 00880000
+    m_LastClickedID: 34816
+    m_ExpandedIDs: be6aeeff1e71eeffe45df4ffde61f4ffaa1ef7ff3098f8ff7aacf8ff96d3f9ff2c77fbff6cfbffff00000000a2870000e287000000880000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -418,18 +418,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: G:\UnityAndroidGames\UDEMY\Repository\Dodge
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 68260000
-    m_LastClickedID: 9832
+    m_SelectedIDs: 5c260000
+    m_LastClickedID: 9820
     m_ExpandedIDs: 2c2600006e260000ac270000b0270000b2270000be27000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -483,8 +483,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 7aacf8ff
-    m_LastClickedInstanceID: -480134
+    m_SelectedInstanceIDs: 00880000
+    m_LastClickedInstanceID: 34816
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 7a32000088360000622d00009429000018290000e0260000f82a00009a2600008a2a0000e628000050290000b6270000f42a0000fa270000f22700006a2900007e280000362a0000ce2700006227000000000000de360000
     m_RenameOverlay:
@@ -510,7 +510,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 111}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 110
 --- !u!114 &12
