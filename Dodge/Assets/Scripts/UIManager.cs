@@ -11,7 +11,7 @@ public class UIManager : MonoBehaviour {
 
 
     [SerializeField]
-    TextMeshProUGUI UpdatedScore;
+    TextMeshProUGUI updatedScore;
 
     [SerializeField]
     Button pause_Button;
@@ -30,6 +30,10 @@ public class UIManager : MonoBehaviour {
 
     bool ispaused;
 
+    [SerializeField]
+    float seconds;
+
+
     private void Awake()
     {
         if(instance == null)
@@ -45,21 +49,22 @@ public class UIManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        updatedScore.text = ScoreManager.instance.score.ToString();
 	}
 
     void ShowButtonScore()
     {
-        UpdatedScore.gameObject.SetActive(true);
+        updatedScore.gameObject.SetActive(true);
         pause_Button.gameObject.SetActive(true);
     }
 
     void HideButtonScore()
     {
-        UpdatedScore.gameObject.SetActive(false);
+        updatedScore.gameObject.SetActive(false);
         pause_Button.gameObject.SetActive(false);
 
     }
+
     public void PausedGame()
     {
         ispaused = !ispaused;
@@ -70,6 +75,7 @@ public class UIManager : MonoBehaviour {
         HideButtonScore();
         pause_MenuPanel.SetActive(true);
     }
+
     public void PlayGame()
     {
         ispaused = !ispaused;
@@ -89,9 +95,17 @@ public class UIManager : MonoBehaviour {
             Time.timeScale = 1;
             
         }
-       // pause_MenuPanel.SetActive(false);
+        // pause_MenuPanel.SetActive(false);
+        StartCoroutine(RestartLevel());
+    }
+
+    IEnumerator RestartLevel()
+    {
+        yield return new WaitForSeconds(seconds);
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
 
     public void ReturnToMenu()
     {
@@ -109,6 +123,11 @@ public class UIManager : MonoBehaviour {
         gameOverMenuPanel.SetActive(true);
         gameOverCurrentScore.text = "SCORE: " + PlayerPrefs.GetInt("score");
         gameOverBestScore.text = "BEST: " + PlayerPrefs.GetInt("highScore");
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(1);
     }
 
 }

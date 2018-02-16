@@ -45,7 +45,7 @@ public class PlayerMove : MonoBehaviour {
         {
             if (Input.GetMouseButtonDown(0))
             {
-               
+                GameManager.instance.GameStart();
                 started = true;
             }
         }
@@ -124,8 +124,8 @@ public class PlayerMove : MonoBehaviour {
         if(collision.gameObject.tag == "FallingSphere" && !game_Over)
         {
             game_Over = true;
-           
 
+            GameManager.instance.GameOver();
             Destroy(gameObject);
         }
     }
