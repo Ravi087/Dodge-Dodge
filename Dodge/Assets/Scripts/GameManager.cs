@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        game_OverActivated = false;
+        game_OverActivated = true;
 	}
 	
 	// Update is called once per frame
@@ -35,16 +35,16 @@ public class GameManager : MonoBehaviour {
     public void GameStart()
     {
         ScoreManager.instance.StartScore();
+       
     }
 
     public void GameOver()
     {
-        game_OverActivated = true;
+        game_OverActivated = false;
         ScoreManager.instance.StopScore();
         UIManager.instance.GameOver();
+         UnityAdManager.instance.ShowAds();
+       // UnityAdManager.instance.ShowWorld();
     }
-    public void EndGame()
-    {
-
-    }
+    
 }

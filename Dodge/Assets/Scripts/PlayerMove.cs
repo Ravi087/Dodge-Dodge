@@ -33,6 +33,7 @@ public class PlayerMove : MonoBehaviour {
     void Start () {
         game_Over = false;
         started = false;
+        
 	}
 	
 	// Update is called once per frame
@@ -41,15 +42,23 @@ public class PlayerMove : MonoBehaviour {
         player_Pos.x = Mathf.Clamp(player_Pos.x, boundary.minPosX, boundary.maxPosX);
         transform.position = player_Pos;
 
+        if(!started)
+        {
+            GameManager.instance.GameStart();
+            started = true;
+        }
+        
+/*
         if (!started)
         {
             if (Input.GetMouseButtonDown(0))
             {
                 GameManager.instance.GameStart();
+                
                 started = true;
             }
         }
-
+        */
     }
     private void FixedUpdate()
     {
@@ -124,9 +133,8 @@ public class PlayerMove : MonoBehaviour {
         if(collision.gameObject.tag == "FallingSphere" && !game_Over)
         {
             game_Over = true;
-
-            GameManager.instance.GameOver();
             Destroy(gameObject);
+            GameManager.instance.GameOver();
         }
     }
 

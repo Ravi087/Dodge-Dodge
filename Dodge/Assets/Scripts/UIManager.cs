@@ -14,6 +14,9 @@ public class UIManager : MonoBehaviour {
     TextMeshProUGUI updatedScore;
 
     [SerializeField]
+    TextMeshProUGUI mainBestScore;
+
+    [SerializeField]
     Button pause_Button;
 
     [SerializeField]
@@ -45,12 +48,15 @@ public class UIManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
         ispaused = false;
-	}
+        mainBestScore.text = "BEST SCORE: " + PlayerPrefs.GetInt("highScore");
+    }
 	
 	// Update is called once per frame
 	void Update () {
+
         updatedScore.text = ScoreManager.instance.score.ToString();
-	}
+        
+    }
 
     void ShowButtonScore()
     {
@@ -96,13 +102,6 @@ public class UIManager : MonoBehaviour {
             
         }
         // pause_MenuPanel.SetActive(false);
-        StartCoroutine(RestartLevel());
-    }
-
-    IEnumerator RestartLevel()
-    {
-        yield return new WaitForSeconds(seconds);
-
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
@@ -123,6 +122,7 @@ public class UIManager : MonoBehaviour {
         gameOverMenuPanel.SetActive(true);
         gameOverCurrentScore.text = "SCORE: " + PlayerPrefs.GetInt("score");
         gameOverBestScore.text = "BEST: " + PlayerPrefs.GetInt("highScore");
+        
     }
 
     public void MainMenu()

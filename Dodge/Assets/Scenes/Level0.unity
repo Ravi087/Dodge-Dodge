@@ -86,7 +86,8 @@ LightmapSettings:
     m_PVRFilteringAtrousColorSigma: 1
     m_PVRFilteringAtrousNormalSigma: 1
     m_PVRFilteringAtrousPositionSigma: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000002, guid: 15cc59605d9009a4ba68a187de866191,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -206,6 +207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 561416698}
   - component: {fileID: 561416697}
+  - component: {fileID: 561416699}
   m_Layer: 0
   m_Name: UImanager
   m_TagString: Untagged
@@ -224,12 +226,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9413c2d0a96c1734ba791e0ef7aac753, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UpdatedScore: {fileID: 0}
+  updatedScore: {fileID: 0}
+  mainBestScore: {fileID: 1706138706}
   pause_Button: {fileID: 0}
   pause_MenuPanel: {fileID: 0}
   gameOverMenuPanel: {fileID: 0}
   gameOverCurrentScore: {fileID: 0}
   gameOverBestScore: {fileID: 0}
+  seconds: 0
 --- !u!4 &561416698
 Transform:
   m_ObjectHideFlags: 0
@@ -243,6 +247,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &561416699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 561416696}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 630f8edba30b98543b0071e8f890c276, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bestScore: {fileID: 1706138706}
 --- !u!1 &591536696
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,7 +857,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -63.649994, y: 72}
+  m_AnchoredPosition: {x: -102.45, y: 72}
   m_SizeDelta: {x: 275.1, y: 67.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1706138706
@@ -891,8 +907,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

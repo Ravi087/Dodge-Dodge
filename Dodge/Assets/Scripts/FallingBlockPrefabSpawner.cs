@@ -22,26 +22,38 @@ public class FallingBlockPrefabSpawner : MonoBehaviour {
     Vector2 prefabRotation;
 
     //to increase the time for next Spawn
-    [SerializeField]
-    Vector2 timeBetSpawn;
+    private float spawnTime = 1f;
 
     //time for next spawn
-    private float timer ;
+    private float timer = 0.0f ;
     
     //to spawn blocks for this position to this position
     Vector3 spawnPos;
 
-	// Use this for initialization
-	void Start () {
+   
+
+    // Use this for initialization
+    void Start () {
       //  InvokeRepeating("SpawnPrefabs", 1f, .5f);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        SpawnPrefabs();
-	}
+        if(Time.time > timer)
+        {
+            SpawnPrefabs();
 
+            timer = Time.time + spawnTime;
+            //Speed up the spawnrate for the next egg
+            spawnTime = spawnTime * 0.99f;
+            spawnTime = Mathf.Clamp(spawnTime, 0.4f, 5f);
+        }
+
+
+    }
+
+   
 
     void SpawnPrefabs()
     {
@@ -51,11 +63,7 @@ public class FallingBlockPrefabSpawner : MonoBehaviour {
         
 
         float spawnSize = Random.Range(prefabSize.x, prefabSize.y);
-        if (Time.time > timer)
-        {
-            float secondsBtwSpawns = Mathf.Lerp(timeBetSpawn.y, timeBetSpawn.x, DifficultyGame.DifficultyPercentage());
-            timer = Time.time + secondsBtwSpawns;
-
+       
             spawnPos = new Vector3(Random.Range(boundary.minPosX, boundary.maxPosX),
                     transform.position.y,
                     transform.position.z);
@@ -64,13 +72,11 @@ public class FallingBlockPrefabSpawner : MonoBehaviour {
 
             GameObject gameObject_Prefabs = Instantiate(prefab[prefabNos], spawnPos, spawnRotation) as GameObject;
 
-            // when score reaches to a certain point it began moving in different direction with change in size of the prefabs;
+            
             gameObject_Prefabs.transform.localScale = Vector3.one * spawnSize;
         }
 
        
 
-        
-        
     }
-}
+

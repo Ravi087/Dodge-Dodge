@@ -10,7 +10,7 @@ public class SphereFalling : MonoBehaviour {
     private float speed;
 	// Use this for initialization
 	void Start () {
-        speed = Mathf.Lerp(speedMinMax.x, speedMinMax.y, DifficultyGame.DifficultyPercentage());
+        speed = Random.Range(speedMinMax.x, speedMinMax.y);
 	}
 	
 	// Update is called once per frame
