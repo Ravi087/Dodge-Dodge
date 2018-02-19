@@ -108,10 +108,10 @@ MonoBehaviour:
     y: 30
     width: 1342
     height: 619
-  m_MinSize: {x: 917, y: 442}
-  m_MaxSize: {x: 22012, y: 10021}
+  m_MinSize: {x: 913, y: 442}
+  m_MaxSize: {x: 22008, y: 10021}
   vertical: 0
-  controlID: 16552
+  controlID: 16499
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 16533
+  controlID: 16466
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -205,8 +205,8 @@ MonoBehaviour:
     y: 0
     width: 208
     height: 619
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -290,7 +290,7 @@ MonoBehaviour:
     y: 455
     width: 489
     height: 243
-  m_MaximizeOnPlay: 0
+  m_MaximizeOnPlay: 1
   m_Gizmos: 0
   m_Stats: 0
   m_SelectedSizes: 08000000000000000000000004000000000000000000000000000000000000000000000000000000
@@ -468,9 +468,9 @@ MonoBehaviour:
     height: 598
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e2710000
-    m_LastClickedID: 29154
-    m_ExpandedIDs: ca2cfdff46fafdffc816feff00fcffff1afcfffff4ffffff000000003e2a00005271000098710000b6710000
+    m_SelectedIDs: f2560000
+    m_LastClickedID: 22258
+    m_ExpandedIDs: 22c1f9ffb4c1f9ff5cc3f9ff6cc3f9ff28d5f9ffbad5f9ff62d7f9ff72d7f9ff4a1cfaffdc1cfaff841efaff941efaffccacfbffc6fffbff5800fcff1002fcff1c02fcff6808fcff2824fcff06a7fcff10b4fcfff0b4fcff9eb6fcffb2b6fcff1afcffff00000000e0290000222a00003a400000544500005646000098460000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -531,19 +531,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: G:\UnityAndroidGames\UDEMY\Repository\Dodge
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 52280000
-    m_LastClickedID: 10322
-    m_ExpandedIDs: 00000000fa260000a0270000242800003a2800006e280000e628000044290000422b000000ca9a3bffffff7f
+    m_SelectedIDs: d6280000
+    m_LastClickedID: 10454
+    m_ExpandedIDs: 00000000fc2600009c270000ec2700001c2800002e28000064280000dc28000036290000242b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -571,7 +571,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fa260000a0270000242800003a2800006e280000e628000044290000422b000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000fc2600009c270000ec2700001c2800002e28000064280000dc28000036290000242b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -598,7 +598,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 7a32000088360000622d00009429000018290000e0260000f82a00009a2600008a2a0000e628000050290000f42a0000fa270000f22700006a2900007e280000362a0000ce2700006227000000000000de3600003e330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -623,7 +623,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 297}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 110
 --- !u!114 &17

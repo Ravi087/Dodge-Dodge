@@ -47,40 +47,42 @@ public class PlayerMove : MonoBehaviour {
             GameManager.instance.GameStart();
             started = true;
         }
-        
-/*
-        if (!started)
-        {
-            if (Input.GetMouseButtonDown(0))
-            {
-                GameManager.instance.GameStart();
-                
-                started = true;
-            }
-        }
-        */
-    }
-    private void FixedUpdate()
-    {
-       
 
-        MovePlayer();
-        /* if(Application.platform == RuntimePlatform.WindowsPlayer)
+       //  TouchMove();
+
+        
+         if (Application.platform == RuntimePlatform.WindowsPlayer)
          {
              MovePlayer();
          }
-         else if(Application.platform == RuntimePlatform.Android)
+         else if (Application.platform == RuntimePlatform.Android)
          {
              TouchMove();
          }
-         */
+         
+    }
+    private void FixedUpdate()
+     {
+
+
+         //  MovePlayer();
+         /*
+         if (Application.platform == RuntimePlatform.WindowsPlayer)
+          {
+              MovePlayer();
+          }
+          else if(Application.platform == RuntimePlatform.Android)
+          {
+              TouchMove();
+          }
+          */
     }
 
     void MovePlayer()
     {
         float horizontalMove = Input.GetAxisRaw("Horizontal");
 
-        rb.velocity = new Vector2(horizontalMove * speed, 0.0f);
+        rb.velocity = new Vector2(horizontalMove * speed * Time.deltaTime, 0.0f);
     }
 
     void TouchMove()
@@ -108,11 +110,11 @@ public class PlayerMove : MonoBehaviour {
 
     void MoveLeft()
     {
-        rb.velocity = new Vector2(-speed, 0f);
+        rb.velocity = new Vector2(-speed * Time.deltaTime, 0f);
     }
     void MoveRight()
     {
-        rb.velocity = new Vector2(speed, 0f);
+        rb.velocity = new Vector2(speed * Time.deltaTime, 0f);
     }
     void SetVelocityZero()
     {

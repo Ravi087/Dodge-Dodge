@@ -22,10 +22,10 @@ MonoBehaviour:
     y: 30
     width: 1342
     height: 619
-  m_MinSize: {x: 917, y: 442}
-  m_MaxSize: {x: 22012, y: 10021}
+  m_MinSize: {x: 913, y: 442}
+  m_MaxSize: {x: 22008, y: 10021}
   vertical: 0
-  controlID: 16368
+  controlID: 6581
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 16392
+  controlID: 6872
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -179,14 +179,14 @@ MonoBehaviour:
     width: 489
     height: 334
   m_SceneLighting: 1
-  lastFramingTime: 17458.91693119027
+  lastFramingTime: 562.2974420987218
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 240, y: 400, z: 0}
+    m_Target: {x: 4.67, y: -1.407, z: 0}
     speed: 2
-    m_Value: {x: 240, y: 400, z: 0}
+    m_Value: {x: 4.67, y: -1.407, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -213,9 +213,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 844.95184
+    m_Target: 7.8288307
     speed: 2
-    m_Value: 844.95184
+    m_Value: 7.8288307
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -330,9 +330,9 @@ MonoBehaviour:
     height: 598
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b6710000
-    m_LastClickedID: 29110
-    m_ExpandedIDs: ca2cfdff46fafdffc816feff00fcffff1afcfffff4ffffff000000003e2a00005271000098710000b6710000
+    m_SelectedIDs: 9e4a0000
+    m_LastClickedID: 19102
+    m_ExpandedIDs: 0a66feff9c66feff4468feff5468feffaa7bfeff3c7cfeffea7dfefffa7dfeff1232ffffa432ffff4c34ffff5c34ffff5883ffffea83ffff9285ffffa285ffff2e9bffff58b3ffff08e9ffff9ae9ffff42ebffff52ebffff1afcffff00000000603b0000a23b00002e47000070470000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -418,19 +418,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: G:\UnityAndroidGames\UDEMY\Repository\Dodge
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 52280000
-    m_LastClickedID: 10322
-    m_ExpandedIDs: 00000000fa260000a0270000242800003a2800006e280000e628000044290000422b000000ca9a3bffffff7f
+    m_SelectedIDs: d4280000
+    m_LastClickedID: 10452
+    m_ExpandedIDs: 00000000fa2600009a270000ea2700001a2800002c28000062280000da28000034290000262b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -458,7 +458,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fa260000a0270000242800003a2800006e280000e628000044290000422b000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000fa2600009a270000ea2700001a2800002c28000062280000da28000034290000262b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -483,8 +483,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: b6710000
-    m_LastClickedInstanceID: 29110
+    m_SelectedInstanceIDs: 9e4a0000
+    m_LastClickedInstanceID: 19102
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 7a32000088360000622d00009429000018290000e0260000f82a00009a2600008a2a0000e628000050290000f42a0000fa270000f22700006a2900007e280000362a0000ce2700006227000000000000de3600003e330000
     m_RenameOverlay:
@@ -510,7 +510,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 297}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 110
 --- !u!114 &12
@@ -566,7 +566,7 @@ MonoBehaviour:
     y: 100
     width: 407
     height: 598
-  m_ScrollPosition: {x: 0, y: 0}
+  m_ScrollPosition: {x: 0, y: 300}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: -247

@@ -102,6 +102,12 @@ public class UIManager : MonoBehaviour {
             
         }
         // pause_MenuPanel.SetActive(false);
+        StartCoroutine(Restart());
+    }
+
+    IEnumerator Restart()
+    {
+        yield return new WaitForSeconds(seconds);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
