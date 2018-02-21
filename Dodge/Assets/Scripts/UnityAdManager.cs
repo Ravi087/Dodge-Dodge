@@ -24,7 +24,7 @@ public class UnityAdManager : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-
+        Advertisement.Initialize("1707887", false);
     }
 
     // Update is called once per frame

@@ -41,8 +41,11 @@ public class GameManager : MonoBehaviour {
     public void GameOver()
     {
         game_OverActivated = false;
-        ScoreManager.instance.StopScore();
         UIManager.instance.GameOver();
+       // AddManager.instance.ShowInterstitialAdd();
+        ScoreManager.instance.StopScore();
+
+        
          UnityAdManager.instance.ShowAds();
        // UnityAdManager.instance.ShowWorld();
     }
